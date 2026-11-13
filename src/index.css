@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  --color-brand-orange: #CC5500;
+  --color-brand-orange-hover: #B34A00;
+  --color-brand-orange-light: #FFF4EC;
+  --color-brand-orange-subtle: #FDF1E7;
+
+  --color-brand-sage: #9CAF88;
+  --color-brand-sage-dark: #4F6443;
+  --color-brand-sage-light: #F2F6F0;
+
+  --color-brand-charcoal: #1A1D24;
+  --color-brand-charcoal-light: #242933;
+  --color-brand-charcoal-card: #20242D;
+  --color-brand-charcoal-muted: #4A5162;
+
+  --color-brand-warm-bg: #FAF8F5;
+  --color-brand-warm-surface: #F5F1E9;
+  --color-brand-warm-border: #E8E2D8;
+}
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #1E232B;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1C9BD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B3A899;
+}
