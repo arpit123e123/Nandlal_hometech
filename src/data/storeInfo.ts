@@ -46,10 +46,10 @@ export const STORE_INFO: StoreInfo = {
     fullFormatted: "Bhitiya Chauraha, Near Walterganj Police Station, Next to Jaiswal Sweets, Basti, Uttar Pradesh, India"
   },
   contact: {
-    phonePlaceholder: "+91 94500 00000",
-    phoneDisplay: "+91 94500 00000 (Store Desk)",
-    whatsappNumber: "919450000000",
-    whatsappDisplay: "+91 94500 00000",
+    phonePlaceholder: "+91 97216 63992",
+    phoneDisplay: "+91 97216 63992 / +91 86013 97935 (Store Desk)",
+    whatsappNumber: "919721663992",
+    whatsappDisplay: "+91 97216 63992",
     emailPlaceholder: "contact@nandlalhometech.in"
   },
   timings: {
