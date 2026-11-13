@@ -11,8 +11,11 @@ export interface StoreInfo {
     country: string;
     pincode: string;
     fullFormatted: string;
+    directionsUrl: string;
   };
   contact: {
+    ownerName: string;
+    ownerPhone: string;
     phonePlaceholder: string;
     phoneDisplay: string;
     whatsappNumber: string;
@@ -43,14 +46,17 @@ export const STORE_INFO: StoreInfo = {
     state: "Uttar Pradesh",
     country: "India",
     pincode: "272182",
-    fullFormatted: "Bhitiya Chauraha, Near Walterganj Police Station, Next to Jaiswal Sweets, Basti, Uttar Pradesh, India"
+    fullFormatted: "Bhitiya Chauraha, Near Walterganj Police Station, Next to Jaiswal Sweets, Basti, Uttar Pradesh, India",
+    directionsUrl: "https://share.google/Xv6uDuOcpuU3hM5Ef"
   },
   contact: {
+    ownerName: "Vikram Patwa",
+    ownerPhone: "+91 97216 63992",
     phonePlaceholder: "+91 97216 63992",
-    phoneDisplay: "+91 97216 63992 / +91 86013 97935 (Store Desk)",
+    phoneDisplay: "+91 97216 63992 (Vikram) / +91 86013 97935 (Arpit)",
     whatsappNumber: "919721663992",
     whatsappDisplay: "+91 97216 63992",
-    emailPlaceholder: "contact@nandlalhometech.in"
+    emailPlaceholder: ""
   },
   timings: {
     weekdays: "Monday – Saturday: 9:00 AM – 8:30 PM",
@@ -95,3 +101,4 @@ export const VALUE_PROPOSITIONS = [
     description: "Centrally positioned at Bhitiya Chauraha near Walterganj Police Station, saving you long trips into city center."
   }
 ];
+

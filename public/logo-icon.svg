@@ -3,8 +3,7 @@
   <!-- Roof / House frame -->
   <path d="M50 20L80 44V76C80 78.2091 78.2091 80 76 80H24C21.7909 80 20 78.2091 20 76V44L50 20Z" stroke="#CC5500" stroke-width="6" stroke-linejoin="round"/>
   <!-- Utility flame / spark / gear accent in center -->
-  <path d="M50 36C45 44 40 48 40 55C40 61.6274 44.4772 66 50 66C55.5228 66 60 61.6274 60 55C60 49 55 45 50 36Z" fill="#CC5500" />
-  <circle cx="50" cy="55" r="4" fill="#9CAF88" />
-  <!-- Underline spark / tech dot -->
-  <circle cx="68" cy="30" r="3" fill="#9CAF88" />
+  <path d="M35 59V49L50 37L65 49V68H55V56H45V68H35V59Z" fill="#FAF8F5" />
+  <path d="M50 42L54 48L51 49L55 54L46 52L49 49L46 48L50 42Z" fill="#CC5500" />
+  <circle cx="70" cy="31" r="4" fill="#9CAF88" />
 </svg>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, X, ArrowRight, ShieldCheck } from 'lucide-react';
+import { MessageCircle, X, ArrowRight, ShieldCheck } from 'lucide-react';
 import { STORE_INFO } from '../data/storeInfo';
 
 export const WhatsAppFloat: React.FC = () => {
@@ -21,7 +21,7 @@ export const WhatsAppFloat: React.FC = () => {
           <div className="bg-[#1A1D24] text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-sm">
-                <MessageSquare className="w-5 h-5 fill-white" />
+                <MessageCircle className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="font-bold text-sm leading-tight">Nandlal Hometech Desk</h4>
@@ -83,7 +83,7 @@ export const WhatsAppFloat: React.FC = () => {
         className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-hidden focus:ring-3 focus:ring-[#25D366]/40 cursor-pointer"
       >
         <span className="w-6 h-6 flex items-center justify-center">
-          <MessageSquare className="w-6 h-6 fill-white" />
+          <MessageCircle className="w-6 h-6" />
         </span>
         <span className="hidden sm:inline font-bold text-xs tracking-wide">
           {isOpen ? 'Close' : 'Chat on WhatsApp'}

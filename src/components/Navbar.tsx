@@ -100,14 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             
             {/* Brand Logo & Tagline */}
             <Link to="/" className="flex items-center gap-3 group focus:outline-none">
-              <div className="w-11 h-11 rounded-xl bg-[#1A1D24] border border-[#CC5500]/40 flex items-center justify-center p-2 shadow-sm group-hover:border-[#CC5500] transition-colors">
-                <svg viewBox="0 0 100 100" className="w-full h-full fill-none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 20L80 44V76C80 78.2091 78.2091 80 76 80H24C21.7909 80 20 78.2091 20 76V44L50 20Z" stroke="#CC5500" strokeWidth="7" strokeLinejoin="round"/>
-                  <path d="M50 36C45 44 40 48 40 55C40 61.6274 44.4772 66 50 66C55.5228 66 60 61.6274 60 55C60 49 55 45 50 36Z" fill="#CC5500"/>
-                  <circle cx="50" cy="55" r="4.5" fill="#9CAF88"/>
-                  <circle cx="68" cy="30" r="3" fill="#9CAF88"/>
-                </svg>
-              </div>
+              <img src="/logo-icon.svg" alt="" className="w-11 h-11 rounded-xl shadow-sm group-hover:scale-105 transition-transform" />
 
               <div className="flex flex-col">
                 <div className="flex items-center gap-1.5">

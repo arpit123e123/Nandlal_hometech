@@ -173,7 +173,7 @@ export const ContactUs: React.FC = () => {
               <div className="flex items-center justify-between">
                 <h3 className="font-bold text-sm text-[#1A1D24]">Google Maps Location</h3>
                 <a
-                  href="https://maps.google.com/?q=Bhitiya+Chauraha+Walterganj+Basti+Uttar+Pradesh"
+                  href={STORE_INFO.address.directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-semibold text-[#CC5500] hover:underline flex items-center gap-1"
@@ -187,7 +187,7 @@ export const ContactUs: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border border-stone-300 shadow-md aspect-16/9 bg-[#F0ECE1]">
                 <iframe
                   title="Nandlal Hometech and Utility Store Location Map"
-                  src="https://maps.google.com/maps?q=Walterganj+Basti+Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(STORE_INFO.address.fullFormatted)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
                   className="w-full h-full border-0"
                   loading="lazy"
                   aria-hidden="false"
