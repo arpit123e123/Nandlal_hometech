@@ -183,24 +183,25 @@ export const ContactUs: React.FC = () => {
                 </a>
               </div>
 
-              {/* Map Container */}
-              <div className="relative rounded-2xl overflow-hidden border border-stone-300 shadow-md aspect-16/9 bg-[#F0ECE1]">
-                <iframe
-                  title="Nandlal Hometech and Utility Store Location Map"
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(STORE_INFO.address.fullFormatted)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-                  className="w-full h-full border-0"
-                  loading="lazy"
-                  aria-hidden="false"
-                ></iframe>
-
-                {/* Overlaid location card */}
-                <div className="absolute bottom-3 left-3 bg-[#1A1D24]/90 backdrop-blur-md text-white p-3 rounded-xl border border-stone-700 shadow-lg text-xs max-w-xs hidden sm:block">
-                  <p className="font-bold">NANDLAL HOMETECH & UTILITY</p>
-                  <p className="text-[11px] text-stone-300 mt-0.5">
-                    Bhitiya Chauraha, Walterganj, Basti (UP)
-                  </p>
+              <a
+                href={STORE_INFO.address.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex min-h-64 sm:aspect-16/9 items-center justify-center overflow-hidden rounded-2xl border border-stone-300 bg-[#1A1D24] p-6 text-center shadow-md"
+              >
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#CC5500]/25 via-[#1A1D24] to-[#111318]" />
+                <div className="relative max-w-md space-y-3">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#CC5500] text-white shadow-lg">
+                    <MapPin className="h-7 w-7" />
+                  </div>
+                  <p className="text-lg font-bold text-white">NANDLAL HOMETECH & UTILITY</p>
+                  <p className="text-sm text-stone-300">{STORE_INFO.address.fullFormatted}</p>
+                  <span className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#1A1D24] transition-colors group-hover:bg-[#CC5500] group-hover:text-white">
+                    Open exact branch location in Google Maps
+                    <ExternalLink className="h-4 w-4" />
+                  </span>
                 </div>
-              </div>
+              </a>
             </div>
 
           </div>
